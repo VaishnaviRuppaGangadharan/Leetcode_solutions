@@ -1,0 +1,4 @@
+1. Go through the entire list
+2. If the number is present in the list for the second time, then delete it
+3. At last, only the number which has occurred once will be left out in the list
+4. Print the number
