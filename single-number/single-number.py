@@ -8,5 +8,5 @@ class Solution:
                 del counts[num]
                 
                 
-        return list(counts)[0]
+        return list(counts.keys())[0]
                 
