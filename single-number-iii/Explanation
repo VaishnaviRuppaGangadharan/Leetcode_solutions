@@ -1,0 +1,6 @@
+Create a dictionary
+If the element is found for the first time, then make the count as 1
+If the element is found for the second time, then increment the count
+Grab the keys from the dictionary and store it in the list
+Append the keys to the list whenever the count is 1
+Return the key list
