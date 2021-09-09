@@ -3,7 +3,7 @@ class Solution:
         nums=sorted(nums)
         uniquenums=set(nums)
         for i in uniquenums:
-            if(nums.count(i))>floor(len(nums)/2):
+            if(nums.count(i))>len(nums)/2:
                 return i
         
         
