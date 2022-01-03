@@ -7,7 +7,6 @@ class Solution {
             if(nums[i]==target){
                 output.add(i);
             }
-        
         }
         return output;
     }
