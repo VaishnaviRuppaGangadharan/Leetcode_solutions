@@ -10,13 +10,13 @@ class Solution {
                 map.put(currChar, -1);
             }
         }
-        int min = Integer.MAX_VALUE;
+        int indexValue = Integer.MAX_VALUE;
         for(char c: map.keySet()){
-            if(map.get(c) > -1 && map.get(c) < min){
-                min=map.get(c);
+            if(map.get(c) > -1 && map.get(c) < indexValue){
+                indexValue=map.get(c);
             }
         }
         
-     return min == Integer.MAX_VALUE ?  -1 : min;
+     return indexValue == Integer.MAX_VALUE ?  -1 : indexValue;
     }
 }
