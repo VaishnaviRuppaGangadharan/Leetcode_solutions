@@ -30,7 +30,7 @@ class Solution {
                     Output.add(key);
                 }}
             // else{
-            //     numsmap2.remove(key);
+            //     numsmap1.remove(key);
             // }
             }
         int[] outputArray = new int[Output.size()];
