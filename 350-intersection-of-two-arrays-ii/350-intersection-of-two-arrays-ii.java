@@ -29,9 +29,9 @@ class Solution {
                 for(int i=0; i<min; i++){
                     Output.add(key);
                 }}
-            else{
-                numsmap2.remove(key);
-            }
+            // else{
+            //     numsmap2.remove(key);
+            // }
             }
         int[] outputArray = new int[Output.size()];
         for(int i=0; i<Output.size(); i++){
