@@ -10,7 +10,7 @@ class Solution {
                 return digits;
             }
             }
-        digits = new int[lastDigit+2];
+        digits = new int[digits.length+1];
         digits[0]=1;
         return digits;
     }
