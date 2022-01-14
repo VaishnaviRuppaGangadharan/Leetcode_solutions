@@ -9,9 +9,14 @@ class Solution {
                 map.put(nums[i], 1);
             }
         }
-        for(Map.Entry<Integer,Integer> m: map.entrySet()){
-            if(m.getValue()==1){
-                return m.getKey();
+        // for(Map.Entry<Integer,Integer> m: map.entrySet()){
+        //     if(m.getValue()==1){
+        //         return m.getKey();
+        //     }
+        // }
+        for(int key: map.keySet()){
+            if(map.get(key)==1){
+                return key;
             }
         }
         return 0;
