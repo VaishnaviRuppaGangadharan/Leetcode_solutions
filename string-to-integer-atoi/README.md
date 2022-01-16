@@ -1,4 +1,4 @@
-<h2>8. String to Integer (atoi)</h2><h3>Medium</h3><hr><div><p>Implement the <code>myAtoi(string s)</code> function, which converts a string to a 32-bit signed integer (similar to C/C++'s <code>atoi</code> function).</p>
+<h2>  String to Integer (atoi)</h2><hr><div><p>Implement the <code>myAtoi(string s)</code> function, which converts a string to a 32-bit signed integer (similar to C/C++'s <code>atoi</code> function).</p>
 
 <p>The algorithm for <code>myAtoi(string s)</code> is as follows:</p>
 
@@ -62,36 +62,6 @@ Step 3: "<u>4193</u> with words" ("4193" is read in; reading stops because the n
              ^
 The parsed integer is 4193.
 Since 4193 is in the range [-2<sup>31</sup>, 2<sup>31</sup> - 1], the final result is 4193.
-</pre>
-
-<p><strong>Example 4:</strong></p>
-
-<pre><strong>Input:</strong> s = "words and 987"
-<strong>Output:</strong> 0
-<strong>Explanation:
-</strong>Step 1: "words and 987" (no characters read because there is no leading whitespace)
-         ^
-Step 2: "words and 987" (no characters read because there is neither a '-' nor '+')
-         ^
-Step 3: "words and 987" (reading stops immediately because there is a non-digit 'w')
-         ^
-The parsed integer is 0 because no digits were read.
-Since 0 is in the range [-2<sup>31</sup>, 2<sup>31</sup> - 1], the final result is 0.
-</pre>
-
-<p><strong>Example 5:</strong></p>
-
-<pre><strong>Input:</strong> s = "-91283472332"
-<strong>Output:</strong> -2147483648
-<strong>Explanation:
-</strong>Step 1: "-91283472332" (no characters read because there is no leading whitespace)
-         ^
-Step 2: "<u>-</u>91283472332" ('-' is read, so the result should be negative)
-          ^
-Step 3: "-<u>91283472332</u>" ("91283472332" is read in)
-                     ^
-The parsed integer is -91283472332.
-Since -91283472332 is less than the lower bound of the range [-2<sup>31</sup>, 2<sup>31</sup> - 1], the final result is clamped to -2<sup>31</sup> = -2147483648.<strong><span style="display: none;"> </span></strong>
 </pre>
 
 <p>&nbsp;</p>
