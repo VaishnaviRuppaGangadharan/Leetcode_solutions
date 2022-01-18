@@ -12,7 +12,7 @@ class Solution {
                 str.append(count).append(result.charAt(i));
                 }
             result = str.toString();
-            --n;
+            n--;
     }
         return result;
     }
