@@ -3,7 +3,7 @@ class Solution {
         String result = "1";
         while(n > 1){
             StringBuilder str = new StringBuilder();
-            for(int i=0; i<result.length(); ++i){
+            for(int i=0; i<result.length(); i++){
                 int count = 1;
                 while(i+1 < result.length() && result.charAt(i)==result.charAt(i+1)){
                     ++count;
