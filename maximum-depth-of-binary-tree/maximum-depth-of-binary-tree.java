@@ -21,7 +21,7 @@ class Solution {
         else{
             int leftHeight = maxDepth(root.left);
             int rightHeight = maxDepth(root.right);
-            return java.lang.Math.max(leftHeight, rightHeight) + 1;
+            return Math.max(leftHeight, rightHeight) + 1;
         }
     }
 }
