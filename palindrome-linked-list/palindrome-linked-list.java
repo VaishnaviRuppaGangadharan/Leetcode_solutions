@@ -10,7 +10,7 @@
  */
 class Solution {
     public boolean isPalindrome(ListNode head) {
-        List <Integer> array = new ArrayList<>();
+        ArrayList <Integer> array = new ArrayList<>();
         
         ListNode CurrentNode = head;
         int count=0;
