@@ -26,5 +26,5 @@ class Solution {
         nodeBefore.next = nodeBefore.next.next;
         return head;
         
-    }
+    } 
 }
