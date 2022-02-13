@@ -15,7 +15,7 @@
  */
 class Solution {
     public List<List<Integer>> levelOrder(TreeNode root) {
-        Queue <TreeNode> queue = new LinkedList<>(); //Creating queue for keeping track of unvisited nodes
+        LinkedList <TreeNode> queue = new LinkedList<>(); //Creating queue for keeping track of unvisited nodes
         List<List<Integer>> Result = new ArrayList<List<Integer>>(); //Storing final order of BFS
         
         if(root == null){
