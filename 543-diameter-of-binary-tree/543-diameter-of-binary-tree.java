@@ -14,13 +14,13 @@
  * }
  */
 class Solution {
-    private int diameter;
+    int diameter = 0;
     public int diameterOfBinaryTree(TreeNode root) {
-        diameter = 0;
+        // diameter = 0;
         findHeight(root);
         return diameter;
     }
-    private int findHeight(TreeNode root){
+    public int findHeight(TreeNode root){
         if(root == null) return 0;
         int left = findHeight(root.left);
         int right = findHeight(root.right);
