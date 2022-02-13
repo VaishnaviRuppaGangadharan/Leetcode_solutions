@@ -10,11 +10,10 @@ class Solution {
             return ;
         }
         image[r][c] = newColor;
-        floodFilling(image, r+1 , c, Color, newColor);
-        floodFilling(image, r , c+1, Color, newColor);
         floodFilling(image, r-1, c, Color, newColor);
         floodFilling(image, r , c-1, Color, newColor);
-        
+        floodFilling(image, r+1 , c, Color, newColor);
+        floodFilling(image, r , c+1, Color, newColor);
     }
 }
 
