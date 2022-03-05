@@ -14,16 +14,13 @@ class Solution {
                  if(arraylist.get(j).length()>i) sb.append(arraylist.get(j).charAt(i));
                  else sb.append(" ");
              }
-             interlist.add(trimRight(sb.toString())); 
+             String sbstr = sb.toString();
+             while(sbstr.charAt(sbstr.length() - 1) == ' ')
+                sbstr = sbstr.substring(0, sbstr.length() - 1);
+             interlist.add(sbstr); 
          }
 
 
          return interlist;
-    }
-    
-    public String trimRight(String str) {
-        while(str.charAt(str.length() - 1) == ' ')
-                str = str.substring(0, str.length() - 1);
-        return str;
     }
 }
