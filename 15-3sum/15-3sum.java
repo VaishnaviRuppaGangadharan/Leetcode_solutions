@@ -3,7 +3,7 @@ class Solution {
     public static List<List<Integer>> threeSum(int[] nums) {
 		List<List<Integer>>result = new ArrayList<>();
 		Arrays.sort(nums);
-        for(int i=0; i<nums.length; i++) {
+        for(int i=0; i<nums.length-2; i++) {
         	if((i == 0) || (nums[i] != nums[i-1])) {
         		findComp(nums, i, result);
         	}
@@ -17,7 +17,7 @@ class Solution {
 			if(seen.contains(comp)) {
 				result.add(Arrays.asList(nums[i],nums[j], comp));
 				while (j + 1 < nums.length && nums[j] == nums[j + 1])
-                    ++j;
+				j++;
 			}
 			seen.add(nums[j]);	
 			
